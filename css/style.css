@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main-header {
+    width: 100%;
+    min-height: 323px;
+    padding: 50px 50px 51px 50px;
+    box-sizing: border-box;
+    background-color: #445162;
+    color: #fff;
+}
+
+.main-header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.main-header-wrp {
+    margin: 0;
+    float: left;
+}
+
+.main-header-title {
+    margin: 0 0 51px 0;
+    padding: 0;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.main-header-list {
+    padding: 0 0 0 36px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.main-header-list-item {
+    list-style-type: none;
+    position: relative;
+}
+
+.main-header-list-item:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 19px;
+    background-image: url(../img/check_icon_349.png);
+    color: #fff;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 6px;
+    left: -35px;
+}
+
+.main-header-img {
+    display: block;
+    width: 469px;
+    min-height: 214px;
+    float: right;
+    background-color: #fff;
+}
