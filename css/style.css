@@ -144,8 +144,8 @@ body {
 }
 
 .dignity-title {
-    display: block;
     width: 100%;
+    display: block;
     margin-bottom: 29px;
     font-size: 30px;
     line-height: 30px;
@@ -163,17 +163,18 @@ body {
     margin: 0;
 }
 
-.dignity-item-plus {
+.dignity-item-text {
     outline: none;
     display: block;
     position: relative;
+    margin: 0;
 }
 
-.dignity-item-plus::-webkit-details-marker {
+.dignity-item-text::-webkit-details-marker {
     display: none;
-  }
-  
-.dignity-item-plus:before {
+}
+
+.dignity-item-text:before {
     content: "+";
     display: block;
     width: 32px;
@@ -189,13 +190,9 @@ body {
     left: -41px;
 }
 
-.dignity-item[open] .dignity-item-plus:before {
+.dignity-item[open] .dignity-item-text:before {
     content: "-";
     line-height: 25px;
-}
-
-.dignity-item-text {
-    margin: 0;
 }
 
 .dignity-item-text-invisible {
@@ -205,4 +202,68 @@ body {
 .margin0 {
     margin-bottom: 0;
 }
+
+.screenshots {
+    width: 100%;
+    min-height: 487px;
+    margin: 0 auto;
+    padding: 50px 66px 50px 50px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.screenshots-title {
+    width: 100%;
+    display: block;
+    margin-bottom: 29px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.screenshots-item {
+    width: 50%;
+    margin: 0 0 30px 0;
+    display: flex;
+}
+
+.screenshots-item:nth-child(4),
+.screenshots-item:nth-child(5) {
+    margin: 0;
+}
+
+.screenshots-item-img {
+    display: block;
+    width: 200px;
+    height: 150px;
+    background-color: #445161;
+}
+
+.screenshots-item-desc {
+    width: 389px;
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+}
+
+.screenshots-item-desc-title {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.screenshots-item-desc-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    text-align: justify;
+}
+
 
