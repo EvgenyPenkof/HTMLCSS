@@ -89,9 +89,11 @@ body {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .about-product-wrp {
+    width: 600px;
     display: block;
     padding-right: 97px;
 }
@@ -156,7 +158,6 @@ body {
 }
 
 .dignity-item {
-    /* min-height: 62px; */
     margin: 0 0 35px 0;
     text-align: justify;
 }
@@ -250,8 +251,6 @@ body {
 
 .screenshots-item-desc {
     width: 389px;
-    /* padding: 0 15px 0 15px;
-    box-sizing: border-box; */
 }
 
 .screenshots-item-desc-title {
@@ -340,7 +339,8 @@ body {
 
 .reviews-item-autor {
     display: block;
-    padding-top: 15px;
+    padding: 0;
+    margin: 10px 0 0 0;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -381,12 +381,13 @@ body {
 
 .price-item {
     width: 25%;
-    display: flex;
-    flex-direction: column;
     margin: 0 20px 0 0;
+    padding: 0 0 10px 0;
     background: #445162;
     border-radius: 10px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
   
 .price-item:nth-child(4) {
@@ -395,7 +396,8 @@ body {
 
 .price-item-title {
     width: 100%;
-    min-height: 50px;
+    padding: 16px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,7 +409,8 @@ body {
 
 .price-item-cost {
     width: 100%;
-    min-height: 69px;
+    padding: 18px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,8 +424,9 @@ body {
 }
 
 .price-item-list {
-    margin: 19px 0 19px 0;
-    padding: 0 20px 0 40px;
+    margin: 19px 0 0 0;
+    padding: 0 0 0 20px;
+    list-style-position: inside;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 24px;
@@ -435,8 +439,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40px;
-    margin: 0 20px 20px 20px;
+    padding: 13px;
+    box-sizing: border-box;
+    margin: 20px auto 0 auto;
     text-decoration: none;
     border-radius: 10px;
     background-color: #ffffff;
@@ -457,8 +462,231 @@ body {
     background-color:#989898;
 }
 
-pull2
+.footer {
+    width: 1280px;
+    margin: 0 auto;
+    color: #445161;
+}
 
+.contacts {
+    width: 100%;
+    min-height: 509px;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #445162;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 
+.contacts-title {
+    width: 100%;
+    display: block;
+    margin: 0 0 31px 0;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
 
+.contacts-form {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 46px 0 0;
+}
 
+.contacts-form-text {
+    text-transform: capitalize;
+}
+
+.contacts-form-textarea {
+    resize: none;
+}
+
+.form-config {
+    width: 100%;
+    display: block;
+    margin: 0 0 22px 0;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.contacts-form-btn {
+    width: 140px;
+    padding: 14px;
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #445161;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.contacts-form-btn[type="submit"]:hover {
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contacts-form-btn[type="submit"]:active {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contacts-address {
+    width: 27%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contacts-address-item {
+    width: 100%;
+    display: block;
+    margin: 0 0 29px 0;
+    padding: 0 0 0 30px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.contacts-address-item:before {
+    content: "";
+    display: block;
+    min-width: 26px;
+    min-height: 26px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contacts-address-item:nth-child(1):before {
+    background-image: url(../img/skype\ icon.png);
+}
+
+.contacts-address-item:nth-child(2):before {
+    background-image: url(../img/icq\ icon.png);
+}
+
+.contacts-address-item:nth-child(3):before {
+    background-image: url(../img/email\ icon.png);
+}
+
+.contacts-address-item:nth-child(4):before {
+    background-image: url(../img/phone\ icon.png);
+}
+
+.contacts-social {
+    width: 100%;
+    display: flex;
+}
+
+.contacts-social-item {
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-image: url(../img/Social\ Icons.png);
+}
+
+.contacts-social-item:nth-child(1) {
+    background-position: 1px 0;
+}
+
+.contacts-social-item:nth-child(2) {
+    background-position: -78px 0;
+}
+
+.contacts-social-item:nth-child(3) {
+    background-position: -315px -79px;
+}
+
+.contacts-social-item:nth-child(4) {
+    background-position: -157px -79px;
+}
+
+.contacts-social-item:nth-child(5) {
+    background-position: -315px 0;
+}
+
+.contacts-social-item:nth-child(1):hover {
+    background-position: 1px -218px;
+}
+
+.contacts-social-item:nth-child(2):hover {
+    background-position: -78px -218px;
+}
+
+.contacts-social-item:nth-child(3):hover {
+    background-position: -315px -299px;
+}
+
+.contacts-social-item:nth-child(4):hover {
+    background-position: -157px -299px;
+}
+
+.contacts-social-item:nth-child(5):hover {
+    background-position: -315px -218px;
+}
+
+.contacts-social-item:nth-child(1):active {
+    background-position: 1px -432px;
+}
+
+.contacts-social-item:nth-child(2):active {
+    background-position: -78px -432px;
+}
+
+.contacts-social-item:nth-child(3):active {
+    background-position: -315px -511px;
+}
+
+.contacts-social-item:nth-child(4):active {
+    background-position: -157px -511px;
+}
+
+.contacts-social-item:nth-child(5):active {
+    background-position: -315px -432px;
+}
+
+.footer-copy {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+.footer-copy-text {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 12px;
+    color: #445162;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
